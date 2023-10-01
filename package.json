@@ -1,0 +1,40 @@
+{
+  "name": "playwright-cache",
+  "version": "1.0.0",
+  "description": "Efficient response caching for Playwright automation scripts.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JijaProGamer/Playwright-cache.git"
+  },
+  "keywords": [
+    "playwright",
+    "cache",
+    "response-caching",
+    "web-automation",
+    "performance-optimization",
+    "network-requests",
+    "Playwright-automation",
+    "HTTP-caching",
+    "web-scraping",
+    "web-testing",
+    "automation-scripts",
+    "Playwright-library",
+    "browser-automation",
+    "web-page-caching",
+    "response-storage"
+  ],
+  "author": "Bloxxy213",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JijaProGamer/Playwright-cache/issues"
+  },
+  "homepage": "https://github.com/JijaProGamer/Playwright-cache#readme",
+  "devDependencies": {
+    "playwright": "^1.38.1"
+  }
+}
