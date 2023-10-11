@@ -1,6 +1,6 @@
 {
   "name": "playwright-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Efficient response caching for Playwright automation scripts.",
   "main": "index.js",
   "type": "module",

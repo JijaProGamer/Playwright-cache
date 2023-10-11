@@ -26,7 +26,7 @@ async function CacheResponse(response, saveFunc) {
             return resolve(false)
         }
 
-        if(controlData.length == 1){
+        if (controlData.length == 1) {
             type = "public"
             controlData[1] = controlData[0]
         }
@@ -38,17 +38,17 @@ async function CacheResponse(response, saveFunc) {
             return resolve(false)
         }
 
-        let headers = await response.allHeaders()
-        delete headers["cookie"]
-
         try {
+            let headers = await response.allHeaders()
+            delete headers["cookie"]
+
             saveFunc(await response.url(), type, expires, {
                 method: request.method(),
                 body: await response.body(),
                 headers,
                 status,
             })
-        } catch(err){
+        } catch (err) {
 
         }
     })
@@ -57,14 +57,14 @@ async function CacheResponse(response, saveFunc) {
 function SearchCache(route, searchFunc) {
     return new Promise(async (resolve, reject) => {
         let request = route.request()
-        let headers = await request.allHeaders()
+        /*let headers = await request.allHeaders()
         
-        /*if(headers["cache-control"]){
+        if(headers["cache-control"]){
             console.log(1, headers)
         }*/
 
         searchFunc(request.url()).then((Data) => {
-            if(Data){
+            if (Data) {
                 route.fullfill(Data)
                 resolve(true)
             } else {
