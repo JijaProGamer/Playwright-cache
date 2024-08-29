@@ -65,7 +65,7 @@ function SearchCache(route, searchFunc) {
 
         searchFunc(request.url()).then((Data) => {
             if (Data) {
-                route.fullfill(Data)
+                route.fulfill(Data)
                 resolve(true)
             } else {
                 resolve(false)
